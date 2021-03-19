@@ -11,3 +11,83 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.quantity_button input {
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  margin: 0;
+  outline: none;
+  padding: 10px;
+}
+
+.quantity_button input[type="button"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+.quantity_button input::-webkit-outer-spin-button,
+.quantity_button input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.quantity_button {
+  clear: both;
+  position: relative;
+}
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.quantity_button input[type='button'] {
+  background-color: #eeeeee;
+  min-width: 38px;
+  width: auto;
+  transition: all 300ms ease;
+}
+
+.quantity_button .button-minus,
+.quantity_button .button-plus {
+  font-weight: bold;
+  height: 38px;
+  padding: 0;
+  width: 38px;
+  position: relative;
+}
+
+.quantity_button .quantity-field {
+  position: relative;
+  height: 38px;
+  left: -6px;
+  text-align: center;
+  width: 62px;
+  display: inline-block;
+  font-size: 13px;
+  margin: 0 0 5px;
+  resize: vertical;
+}
+
+.button-plus {
+  left: -13px;
+}
+
+.quantity_button input[type="number"] {
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+}
+
+.bill_parent {
+  padding: 8px;
+  float: left;
+}
+
+@media (min-width: 960px) {
+.bill_parent {
+    float: right
+}
+}
